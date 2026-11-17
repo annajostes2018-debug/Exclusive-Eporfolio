@@ -31,6 +31,7 @@ button {
 
 .container {
   padding: 50px 0;
+  width: 100%;
 }
 
 .row {
@@ -282,4 +283,18 @@ PROJECTS
   margin: 16px 0;
 }
 
+/* 
+
+FOOTER
+
+*/
+
+footer {
+  background-color: black;
+  display: flex;
+}
+
+.footer__container {
+  margin: 0 auto;
+}
 
