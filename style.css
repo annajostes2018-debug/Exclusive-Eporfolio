@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@98.6,100..900&display=swap');
 
 * {
   margin: 0;
@@ -60,9 +60,11 @@ button {
   line-height: 1;
 }
 
-  .blueviolet {
+ .blueviolet {
     color: blueviolet !important;
-  }
+}
+
+
 
  .link__hover-effect {
   position: relative;
@@ -271,6 +273,27 @@ max-height: 90vh;
 .modal__language {
   width: 25%;
   padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.modal__language:hover .language__name {
+  transform: scale(1);
+}
+
+.modal__language:hover {
+  filter: brightness(80%);
+  transform: scale(0.9);
+}
+
+.language__name {
+  position: absolute;
+  bottom: -10px;
+  transform: scale(0);
+  transform: all 300ms ease;
 }
 
 .modal__language--img {
@@ -281,6 +304,21 @@ max-height: 90vh;
   background-color: #242424;
   color: white;
 }
+
+.modal__title {
+  font-size: 26px;
+}
+
+.modal__sub-title {
+  margin: 12px 0 24px 0;
+}
+
+.modal__para {
+  margin-bottom: 12px;
+  line-height: 1.75;
+}
+
+
 
 /* 
 
